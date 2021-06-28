@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,yBAAyB;AAEzB,mBAAmB",
-    "sources": [
-        "home.scss"
-    ],
-    "names": [],
-    "file": "home.css"
-}
