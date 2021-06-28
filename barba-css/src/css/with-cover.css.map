@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,kCAAkC",
+    "sources": [
+        "with-cover.scss"
+    ],
+    "names": [],
+    "file": "with-cover.css"
+}
