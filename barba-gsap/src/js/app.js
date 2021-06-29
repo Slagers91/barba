@@ -1,18 +1,16 @@
 import barba from '@barba/core';
-import gsap from 'gsap';
+import { animationEnter, animationLeave } from './animations';
 
-const animationEnter = (container) => {
-    return gsap.from(container, { autoAlpha: 0, duration: 2});
-}
-
-const animationLeave = (container) => {
-    return gsap.to(container, { autoAlpha: 0, duration: 2});
-}
 
 barba.init({
     transitions: [
         {
-            once(){
+            once({next}){
+                animationEnter(next.container);
+            },
+            leave: ({current}) => animationLeave(current.container),
+            enter({next}){
+                console.log('entering');
                 animationEnter(next.container);
             }
         }
